@@ -1,0 +1,385 @@
+# Python 2.7
+# Embedded file name: game.py
+
+   1       0  LOAD_CONST               249
+           3  LOAD_CONST               91
+           6  LOAD_CONST               149
+           9  LOAD_CONST               113
+          12  LOAD_CONST               16
+          15  LOAD_CONST               91
+          18  LOAD_CONST               53
+          21  LOAD_CONST               41
+          24  BUILD_LIST_8          8
+          27  STORE_NAME            0  'arr0'
+
+   2      30  LOAD_CONST               43
+          33  LOAD_CONST               1
+          36  LOAD_CONST               6
+          39  LOAD_CONST               69
+          42  LOAD_CONST               20
+          45  LOAD_CONST               62
+          48  LOAD_CONST               6
+          51  LOAD_CONST               44
+          54  LOAD_CONST               24
+          57  LOAD_CONST               113
+          60  LOAD_CONST               6
+          63  LOAD_CONST               35
+          66  LOAD_CONST               0
+          69  LOAD_CONST               3
+          72  LOAD_CONST               6
+          75  LOAD_CONST               44
+          78  LOAD_CONST               20
+          81  LOAD_CONST               22
+          84  LOAD_CONST               127
+          87  LOAD_CONST               60
+          90  BUILD_LIST_20        20
+          93  STORE_NAME            1  'arr1'
+
+   3      96  LOAD_CONST               90
+          99  LOAD_CONST               100
+         102  LOAD_CONST               87
+         105  LOAD_CONST               109
+         108  LOAD_CONST               86
+         111  LOAD_CONST               108
+         114  LOAD_CONST               86
+         117  LOAD_CONST               105
+         120  LOAD_CONST               90
+         123  LOAD_CONST               104
+         126  LOAD_CONST               88
+         129  LOAD_CONST               102
+         132  BUILD_LIST_12        12
+         135  STORE_NAME            2  'arr2'
+
+   5     138  LOAD_CODE                <code_object check0>
+         141  MAKE_FUNCTION_0       0  None
+         144  STORE_NAME            3  'check0'
+
+   8     147  LOAD_CODE                <code_object check1>
+         150  MAKE_FUNCTION_0       0  None
+         153  STORE_NAME            4  'check1'
+
+  14     156  LOAD_CODE                <code_object check2>
+         159  MAKE_FUNCTION_0       0  None
+         162  STORE_NAME            5  'check2'
+
+  20     165  LOAD_CODE                <code_object check3>
+         168  MAKE_FUNCTION_0       0  None
+         171  STORE_NAME            6  'check3'
+
+  37     174  LOAD_NAME             7  'raw_input'
+         177  CALL_FUNCTION_0       0  None
+         180  STORE_NAME            8  'flag'
+
+  38     183  LOAD_NAME             3  'check0'
+         186  LOAD_NAME             8  'flag'
+         189  CALL_FUNCTION_1       1  None
+         192  POP_JUMP_IF_FALSE   239  'to 239'
+         195  LOAD_NAME             4  'check1'
+         198  LOAD_NAME             8  'flag'
+         201  CALL_FUNCTION_1       1  None
+         204  POP_JUMP_IF_FALSE   239  'to 239'
+         207  LOAD_NAME             5  'check2'
+         210  LOAD_NAME             8  'flag'
+         213  CALL_FUNCTION_1       1  None
+         216  POP_JUMP_IF_FALSE   239  'to 239'
+         219  LOAD_NAME             6  'check3'
+         222  LOAD_NAME             8  'flag'
+         225  CALL_FUNCTION_1       1  None
+       228_0  COME_FROM           216  '216'
+       228_1  COME_FROM           204  '204'
+       228_2  COME_FROM           192  '192'
+         228  POP_JUMP_IF_FALSE   239  'to 239'
+
+  39     231  LOAD_CONST               'ok'
+         234  PRINT_ITEM
+         235  PRINT_NEWLINE_CONT
+         236  JUMP_FORWARD          5  'to 244'
+
+  41     239  LOAD_CONST               'no'
+         242  PRINT_ITEM
+         243  PRINT_NEWLINE_CONT
+       244_0  COME_FROM           236  '236'
+         244  LOAD_CONST               None
+         247  RETURN_VALUE
+
+# check0 line 5 of game.py
+
+   6       0  LOAD_GLOBAL           0  'all'
+           3  LOAD_GENEXPR             '<code_object <genexpr>>'
+           6  MAKE_FUNCTION_0       0  None
+           9  LOAD_FAST             0  's'
+          12  GET_ITER
+          13  CALL_FUNCTION_1       1  None
+          16  CALL_FUNCTION_1       1  None
+          19  RETURN_VALUE
+
+# check1 line 8 of game.py
+
+   9       0  LOAD_GLOBAL           0  'len'
+           3  LOAD_FAST             0  's'
+           6  CALL_FUNCTION_1       1  None
+           9  LOAD_CONST               100
+          12  COMPARE_OP            0  <
+          15  POP_JUMP_IF_FALSE    58  'to 58'
+          18  LOAD_GLOBAL           0  'len'
+          21  LOAD_FAST             0  's'
+          24  CALL_FUNCTION_1       1  None
+          27  LOAD_GLOBAL           0  'len'
+          30  LOAD_FAST             0  's'
+          33  CALL_FUNCTION_1       1  None
+          36  BINARY_MULTIPLY
+          37  LOAD_CONST               777
+          40  BINARY_MODULO
+          41  LOAD_CONST               233
+          44  BINARY_XOR
+          45  LOAD_CONST               513
+          48  COMPARE_OP            2  ==
+        51_0  COME_FROM            15  '15'
+          51  POP_JUMP_IF_FALSE    58  'to 58'
+
+  10      54  LOAD_GLOBAL           1  'True'
+          57  RETURN_END_IF
+        58_0  COME_FROM            51  '51'
+
+  12      58  LOAD_GLOBAL           2  'False'
+          61  RETURN_VALUE
+          62  LOAD_CONST               None
+          65  RETURN_VALUE
+
+# check2 line 14 of game.py
+
+  15       0  LOAD_GLOBAL           0  'ord'
+           3  LOAD_FAST             0  's'
+           6  LOAD_CONST               0
+           9  BINARY_SUBSCR
+          10  CALL_FUNCTION_1       1  None
+          13  LOAD_CONST               128
+          16  BINARY_MULTIPLY
+          17  LOAD_GLOBAL           0  'ord'
+          20  LOAD_FAST             0  's'
+          23  LOAD_CONST               1
+          26  BINARY_SUBSCR
+          27  CALL_FUNCTION_1       1  None
+          30  BINARY_ADD
+          31  LOAD_CONST               128
+          34  BINARY_MULTIPLY
+          35  LOAD_GLOBAL           0  'ord'
+          38  LOAD_FAST             0  's'
+          41  LOAD_CONST               2
+          44  BINARY_SUBSCR
+          45  CALL_FUNCTION_1       1  None
+          48  BINARY_ADD
+          49  LOAD_CONST               128
+          52  BINARY_MULTIPLY
+          53  LOAD_GLOBAL           0  'ord'
+          56  LOAD_FAST             0  's'
+          59  LOAD_CONST               3
+          62  BINARY_SUBSCR
+          63  CALL_FUNCTION_1       1  None
+          66  BINARY_ADD
+          67  LOAD_CONST               128
+          70  BINARY_MULTIPLY
+          71  LOAD_GLOBAL           0  'ord'
+          74  LOAD_FAST             0  's'
+          77  LOAD_CONST               4
+          80  BINARY_SUBSCR
+          81  CALL_FUNCTION_1       1  None
+          84  BINARY_ADD
+          85  LOAD_CONST               128
+          88  BINARY_MULTIPLY
+          89  LOAD_GLOBAL           0  'ord'
+          92  LOAD_FAST             0  's'
+          95  LOAD_CONST               5
+          98  BINARY_SUBSCR
+          99  CALL_FUNCTION_1       1  None
+         102  BINARY_ADD
+         103  LOAD_CONST               3533889469877L
+         106  COMPARE_OP            2  ==
+         109  POP_JUMP_IF_FALSE   138  'to 138'
+         112  LOAD_GLOBAL           0  'ord'
+         115  LOAD_FAST             0  's'
+         118  LOAD_CONST               -1
+         121  BINARY_SUBSCR
+         122  CALL_FUNCTION_1       1  None
+         125  LOAD_CONST               125
+         128  COMPARE_OP            2  ==
+       131_0  COME_FROM           109  '109'
+         131  POP_JUMP_IF_FALSE   138  'to 138'
+
+  16     134  LOAD_GLOBAL           1  'True'
+         137  RETURN_END_IF
+       138_0  COME_FROM           131  '131'
+
+  18     138  LOAD_GLOBAL           2  'False'
+         141  RETURN_VALUE
+         142  LOAD_CONST               None
+         145  RETURN_VALUE
+
+# check3 line 20 of game.py
+
+  21       0  LOAD_GLOBAL           0  'map'
+           3  LOAD_GLOBAL           1  'ord'
+           6  LOAD_FAST             0  's'
+           9  CALL_FUNCTION_2       2  None
+          12  STORE_FAST            1  'arr'
+
+  22      15  LOAD_FAST             1  'arr'
+          18  LOAD_CONST               6
+          21  LOAD_CONST               30
+          24  LOAD_CONST               3
+          27  BUILD_SLICE_3         3
+          30  BINARY_SUBSCR
+          31  STORE_FAST            2  'a'
+
+  23      34  SETUP_LOOP           62  'to 99'
+          37  LOAD_GLOBAL           2  'range'
+          40  LOAD_GLOBAL           3  'len'
+          43  LOAD_FAST             2  'a'
+          46  CALL_FUNCTION_1       1  None
+          49  CALL_FUNCTION_1       1  None
+          52  GET_ITER
+          53  FOR_ITER             42  'to 98'
+          56  STORE_FAST            3  'i'
+
+  24      59  LOAD_FAST             2  'a'
+          62  LOAD_FAST             3  'i'
+          65  BINARY_SUBSCR
+          66  LOAD_CONST               17684
+          69  BINARY_MULTIPLY
+          70  LOAD_CONST               372511
+          73  BINARY_ADD
+          74  LOAD_CONST               257
+          77  BINARY_MODULO
+          78  LOAD_GLOBAL           4  'arr0'
+          81  LOAD_FAST             3  'i'
+          84  BINARY_SUBSCR
+          85  COMPARE_OP            3  !=
+          88  POP_JUMP_IF_FALSE    53  'to 53'
+
+  25      91  LOAD_GLOBAL           5  'False'
+          94  RETURN_END_IF
+        95_0  COME_FROM            88  '88'
+          95  JUMP_BACK            53  'to 53'
+          98  POP_BLOCK
+        99_0  COME_FROM            34  '34'
+
+  26      99  LOAD_FAST             1  'arr'
+         102  LOAD_CONST               -2
+         105  LOAD_CONST               33
+         108  LOAD_CONST               -1
+         111  BUILD_SLICE_3         3
+         114  BINARY_SUBSCR
+         115  LOAD_CONST               5
+         118  BINARY_MULTIPLY
+         119  STORE_FAST            4  'b'
+
+  27     122  LOAD_GLOBAL           0  'map'
+         125  LOAD_LAMBDA              '<code_object <lambda>>'
+         128  MAKE_FUNCTION_0       0  None
+         131  LOAD_GLOBAL           6  'zip'
+         134  LOAD_FAST             4  'b'
+         137  LOAD_FAST             1  'arr'
+         140  LOAD_CONST               7
+         143  LOAD_CONST               27
+         146  SLICE+3
+         147  CALL_FUNCTION_2       2  None
+         150  CALL_FUNCTION_2       2  None
+         153  STORE_FAST            5  'c'
+
+  28     156  LOAD_FAST             5  'c'
+         159  LOAD_GLOBAL           7  'arr1'
+         162  COMPARE_OP            3  !=
+         165  POP_JUMP_IF_FALSE   172  'to 172'
+
+  29     168  LOAD_GLOBAL           5  'False'
+         171  RETURN_END_IF
+       172_0  COME_FROM           165  '165'
+
+  30     172  LOAD_CONST               0
+         175  STORE_FAST            6  'p'
+
+  31     178  SETUP_LOOP          105  'to 286'
+         181  LOAD_GLOBAL           2  'range'
+         184  LOAD_CONST               28
+         187  LOAD_CONST               34
+         190  CALL_FUNCTION_2       2  None
+         193  GET_ITER
+         194  FOR_ITER             88  'to 285'
+         197  STORE_FAST            3  'i'
+
+  32     200  LOAD_FAST             1  'arr'
+         203  LOAD_FAST             3  'i'
+         206  BINARY_SUBSCR
+         207  LOAD_CONST               107
+         210  BINARY_ADD
+         211  LOAD_CONST               16
+         214  BINARY_DIVIDE
+         215  LOAD_CONST               77
+         218  BINARY_ADD
+         219  LOAD_GLOBAL           8  'arr2'
+         222  LOAD_FAST             6  'p'
+         225  BINARY_SUBSCR
+         226  COMPARE_OP            3  !=
+         229  POP_JUMP_IF_TRUE    268  'to 268'
+         232  LOAD_FAST             1  'arr'
+         235  LOAD_FAST             3  'i'
+         238  BINARY_SUBSCR
+         239  LOAD_CONST               117
+         242  BINARY_ADD
+         243  LOAD_CONST               16
+         246  BINARY_MODULO
+         247  LOAD_CONST               99
+         250  BINARY_ADD
+         251  LOAD_GLOBAL           8  'arr2'
+         254  LOAD_FAST             6  'p'
+         257  LOAD_CONST               1
+         260  BINARY_ADD
+         261  BINARY_SUBSCR
+         262  COMPARE_OP            3  !=
+       265_0  COME_FROM           229  '229'
+         265  POP_JUMP_IF_FALSE   272  'to 272'
+
+  33     268  LOAD_GLOBAL           9  'false'
+         271  RETURN_END_IF
+       272_0  COME_FROM           265  '265'
+
+  34     272  LOAD_FAST             6  'p'
+         275  LOAD_CONST               2
+         278  INPLACE_ADD
+         279  STORE_FAST            6  'p'
+         282  JUMP_BACK           194  'to 194'
+         285  POP_BLOCK
+       286_0  COME_FROM           178  '178'
+
+  35     286  LOAD_GLOBAL          10  'True'
+         289  RETURN_VALUE
+
+# <genexpr> line 6 of game.py
+
+   6       0  LOAD_FAST             0  '.0'
+           3  FOR_ITER             32  'to 38'
+           6  STORE_FAST            1  'x'
+           9  LOAD_GLOBAL           0  'ord'
+          12  LOAD_FAST             1  'x'
+          15  CALL_FUNCTION_1       1  None
+          18  LOAD_GLOBAL           1  'range'
+          21  LOAD_CONST               32
+          24  LOAD_CONST               128
+          27  CALL_FUNCTION_2       2  None
+          30  COMPARE_OP            6  in
+          33  YIELD_VALUE
+          34  POP_TOP
+          35  JUMP_BACK             3  'to 3'
+          38  LOAD_CONST               None
+          41  RETURN_VALUE
+
+# <lambda> line 27 of game.py
+
+  27       0  LOAD_FAST             0  'x'
+           3  LOAD_CONST               0
+           6  BINARY_SUBSCR
+           7  LOAD_FAST             0  'x'
+          10  LOAD_CONST               1
+          13  BINARY_SUBSCR
+          14  BINARY_XOR
+          15  RETURN_VALUE
